@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Merienda:wght@300..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  border: 2px solid blue;
+}
 .navbar {
   border-radius: 5px;
   margin: 10px;
@@ -782,11 +787,26 @@ p {
     display: block;
   }
 }
+.card-content {
+  width: 18rem !important;
+}
+@media (max-width: 425px) {
+  .card-content {
+    width: 100% !important;
+  }
+  .col-lg-4 {
+    padding: 16px;
+  }
+  .Section6 .card-text {
+    margin-right: 0px;
+  }
+}
 @media (max-width: 1020px) {
   .youngimg {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
