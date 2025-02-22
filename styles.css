@@ -600,6 +600,15 @@ p {
   width: 100px;
   margin: 10px 5px 0;
 }
+.copyright-footer {
+  background-color: white;
+  color: gray;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-top: 5px solid #2e7a33; /* Green border like in the image */
+  width: 100%;
+}
 
 /* Responsive Fixes */
 
@@ -786,6 +795,24 @@ p {
 
   .footer-section {
     margin-bottom: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .store-icons {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section.social {
+    text-align: center;
   }
 
   .social-icons {
