@@ -800,6 +800,14 @@ p {
   .Section6 .card-text {
     margin-right: 0px;
   }
+  .button-container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  .conects {
+    border-right: 0px;
+  }
 }
 @media (max-width: 1020px) {
   .youngimg {
