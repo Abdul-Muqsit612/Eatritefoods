@@ -405,7 +405,7 @@ body {
 
 .youngimg {
   position: absolute;
-  left: 82px;
+  left: 25px;
   bottom: 10px;
 }
 .card:nth-child(even) {
@@ -789,7 +789,7 @@ p {
   }
 }
 .card-content {
-  width: 18rem !important;
+  width: 15rem !important;
 }
 @media (max-width: 425px) {
   .card-content {
@@ -823,38 +823,41 @@ p {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .footer {
     flex-direction: column;
-    text-align: center;
+    text-align: left; /* Ensures text aligns to the left */
+    align-items: flex-start; /* Aligns content to the left */
+    padding: 20px;
   }
 
   .footer-section {
+    width: 100%;
     margin-bottom: 20px;
   }
 
-  .social-icons {
-    justify-content: center;
+  .footer-section h3 {
+    text-align: left; /* Keeps headings left-aligned */
   }
 
+  .footer-section ul {
+    text-align: left; /* Ensures links align left */
+  }
+
+  .footer-section p {
+    text-align: left; /* Ensures paragraphs align left */
+  }
+
+  /* Social and Store Icons */
+  .social-icons,
   .store-icons {
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    justify-content: flex-start; /* Aligns icons to the left */
+    flex-wrap: wrap; /* Allows wrapping if needed */
   }
 
-  .footer-section.social {
-    text-align: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-
-  .store-icons {
-    justify-content: center;
+  .social-icons a img,
+  .store-icons img {
+    width: 24px; /* Reduces icon size */
+    height: 24px;
   }
 }
