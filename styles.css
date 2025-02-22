@@ -333,7 +333,6 @@
 /* Grid Styling */
 
 .main-Section4 .row {
-  border: 2px solid red;
   display: flex;
   justify-content: center;
 }
@@ -357,7 +356,6 @@
 }
 
 .main-section-content {
-  border: 2px solid red;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -366,10 +364,18 @@
 
 /* Section 5 */
 .Pricing-Section {
-  background-color: rgba(148, 200, 65, 0.1);
+  background-image: url("/Assets/group4.png");
+  background-size: cover; /* Ensures full coverage */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
   color: #2e7a33;
   padding: 90px 20px;
   font-family: "Inria Serif", serif;
+  min-height: 400px; /* Ensures visibility */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .Pricing-Section p {
@@ -385,22 +391,33 @@
 
 /* Section6 */
 .Section6 {
-  background-color: rgba(195, 197, 191, 0.2);
+  background-image: url("./Assets/group5.png"); /* Ensure the path is correct */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
   color: #2e7a33;
-  padding: 90px 20px;
   font-family: "Inria Serif", serif;
   margin: 10px;
+  padding: 20px;
   text-align: center;
 }
 .Section6 .card {
+  border: 2px solid #2e7a33;
+  width: fit-content;
+}
+.Section6 .card-content {
   padding: 20px;
   margin-top: 10px;
-  border: 2px solid #2e7a33;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-  transform: rotate(+2deg);
+  position: relative;
+}
+
+.youngimg {
+  position: absolute;
+  left: 90px;
+  bottom: 10px;
 }
 .card:nth-child(even) {
-  transform: rotate(2deg);
+  transform: rotate(1deg);
 }
 .stars {
   color: #2f5d2d;
@@ -409,13 +426,19 @@
 }
 .Section6 .card-text {
   color: #2e7a33;
+  text-align: start;
+  margin-right: 32px;
 }
 .card-img-top {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: auto;
+  width: 80px; /* Adjust width as needed */
+  height: 80px; /* Ensures a circular shape */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image fits well */
+  display: block; /* Avoids unwanted inline spacing */
+  margin: 0 auto; /* Centers the image horizontally */
 }
+/* For medium screens (tablets) */
+
 /* Section7 */
 .Section7 {
   padding: 20px;
@@ -633,8 +656,25 @@ p {
     align-items: center;
   }
   .Section6 .card {
-    width: 90% !important;
+    /* width: fit-content!important; */
     transform: none !important;
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 1020px) {
+  .Section6 .card-content {
+    transform: skew(+20deg);
+  }
+  .Section6 .card {
+    transform: skew(-20deg);
+  }
+  .youngimg {
+    display: block;
+  }
+}
+@media (max-width: 1020px) {
+
+  .youngimg {
+    display: none;
   }
 }
