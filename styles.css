@@ -279,7 +279,7 @@
 }
 
 /* .Map-Container {
-  flex: 1.5; /* Ensures the map section takes more width */
+  flex: 1.5; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,8 +289,9 @@
   width: 104%;
   height: 100%;
   border-radius: 10px;
-  object-fit: cover;
-} */
+  object-fit: cover; */
+
+*/
 /*  Section 4  */
 /* Section Styling */
 .main-Section4 {
@@ -331,7 +332,7 @@
 
 /* Grid Styling */
 
-.main-Section4  .row {
+.main-Section4 .row {
   border: 2px solid red;
   display: flex;
   justify-content: center;
@@ -355,13 +356,14 @@
   max-width: 300px;
 }
 
-.main-section-content{
-border:2px solid red;
-display: flex;
-flex-direction: row;
-justify-content:center;
-align-items: start;
+.main-section-content {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
 }
+
 /* Section 5 */
 .Pricing-Section {
   background-color: rgba(148, 200, 65, 0.1);
@@ -380,6 +382,7 @@ align-items: start;
   margin-top: 10px;
   font-weight: bolder;
 }
+
 /* Section6 */
 .Section6 {
   background-color: rgba(195, 197, 191, 0.2);
