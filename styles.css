@@ -3,7 +3,6 @@
 body {
   margin: 0;
   padding: 0;
-  border: 2px solid blue;
 }
 .navbar {
   border-radius: 5px;
@@ -525,6 +524,8 @@ p {
   color: white;
   padding: 30px 20px;
   font-family: "Inria Serif", serif;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .Footer-Section .container {
@@ -603,6 +604,7 @@ p {
 
 .store-icons img {
   width: 100px;
+
   margin: 10px 5px 0;
 }
 .copyright-footer {
@@ -611,7 +613,6 @@ p {
   text-align: center;
   padding: 10px;
   font-size: 14px;
-  border-top: 5px solid #2e7a33; /* Green border like in the image */
   width: 100%;
 }
 
@@ -812,6 +813,12 @@ p {
 @media (max-width: 1020px) {
   .youngimg {
     display: none;
+  }
+  .main-section-content {
+    flex-wrap: wrap;
+  }
+  .Main-Section3 {
+    padding: 0px;
   }
 }
 
