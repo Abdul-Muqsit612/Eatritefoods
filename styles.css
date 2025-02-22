@@ -278,33 +278,21 @@
   font-size: 18px;
 }
 
-/* .Map-Container {
-  flex: 1.5; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Map-Image {
-  width: 104%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover; */
-
-*/
 /*  Section 4  */
 /* Section Styling */
 .main-Section4 {
-  background-image: url("./Assets/group3.png");
-  background-size: cover; /* Ensures the full image is visible */
-  background-position: center center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repetition */
+  background-image: url("./Assets/Group 2.png"); /* Ensure path is correct */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
   margin: 10px;
   border-radius: 5px;
   font-family: "Inria Serif", serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 400px; /* Ensures section has enough height */
+  padding: 20px;
 }
 
 /* Responsive adjustments */
@@ -413,7 +401,7 @@
 
 .youngimg {
   position: absolute;
-  left: 90px;
+  left: 82px;
   bottom: 10px;
 }
 .card:nth-child(even) {
@@ -442,8 +430,11 @@
 /* Section7 */
 .Section7 {
   padding: 20px;
-  background-color: rgba(148, 200, 65, 0.1);
+  background-image: url("/Assets/Group\ 85.png");
+  background-size: cover; /* Ensures the entire image is visible */
+  background-repeat: no-repeat; /* Prevents repetition */
   margin: 10px;
+  min-height: 300px; /* Ensures visibility */
 }
 
 .row {
@@ -477,11 +468,16 @@
 }
 /* Section8 */
 .Section8 {
-  background-color: #eef5ed; /* Light green background */
+  background-image: url("/Assets/Group87.png");
   padding: 40px 0;
   margin: 10px;
+  background-size: cover; /* Ensures the entire image is visible */
+  background-repeat: no-repeat; /* Prevents repetition */
 }
-
+.conects {
+  border-left: 2px solid #28462a;
+  border-right: 2px solid #28462a;
+}
 .row {
   display: flex;
   justify-content: center;
@@ -517,7 +513,112 @@ p {
   margin: 0 20px; /* Space between sections */
   transform: rotate(+5.12deg); /* Slight rotation */
 }
+/* Footer Section */
 
+.footer {
+  background-color: #2e7a33;
+  color: white;
+  padding: 30px 20px;
+  font-family: "Inria Serif", serif;
+}
+
+.Footer-Section .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+/* Fix contact section */
+.footer-section.contact {
+  color: white;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: white !important;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure contact details are visible */
+.footer-section.contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.contact i {
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: lightgray;
+}
+
+.store-icons img {
+  width: 100px;
+  margin: 10px 5px 0;
+}
+
+/* Responsive Fixes */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
 /*Media Queries  */
 @media (max-width: 991px) {
   .navbar-collapse {
@@ -673,8 +774,25 @@ p {
   }
 }
 @media (max-width: 1020px) {
-
   .youngimg {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .store-icons {
+    justify-content: center;
   }
 }
