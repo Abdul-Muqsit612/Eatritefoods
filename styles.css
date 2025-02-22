@@ -278,7 +278,7 @@
   font-size: 18px;
 }
 
-.Map-Container {
+/* .Map-Container {
   flex: 1.5; /* Ensures the map section takes more width */
   display: flex;
   justify-content: center;
@@ -290,25 +290,32 @@
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
-}
+} */
 /*  Section 4  */
 /* Section Styling */
-.Main-Section4 {
-  background-image: url(./Assets/Group\ 3.png);
+.main-Section4 {
+  background-image: url("./Assets/group3.png");
+  background-size: cover; /* Ensures the full image is visible */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
   margin: 10px;
   border-radius: 5px;
   font-family: "Inria Serif", serif;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Responsive adjustments */
 
 .Text-content4 {
   text-align: center;
   color: #2e7a33;
-  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .Text-content4 p {
@@ -324,27 +331,36 @@
 
 /* Grid Styling */
 
-.Main-Section4 .row {
+.main-Section4  .row {
+  border: 2px solid red;
   display: flex;
   justify-content: center;
 }
 
-.Main-Section4 .col-lg-4 {
+.main-Section4 .col-lg-4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.Main-Section4 img {
+.main-Section4 img {
   width: 200px;
   height: auto;
   margin-bottom: 15px;
 }
 
-.Main-Section4 p {
+.main-Section4 p {
   font-size: 18px;
   max-width: 300px;
+}
+
+.main-section-content{
+border:2px solid red;
+display: flex;
+flex-direction: row;
+justify-content:center;
+align-items: start;
 }
 /* Section 5 */
 .Pricing-Section {
